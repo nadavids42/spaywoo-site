@@ -1,52 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpayWoo</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpayWoo | Helping stray cats find healthier futures</title>
+  <meta name="description" content="SpayWoo helps stray and community cats through spay/neuter support, volunteer coordination, and local rescue efforts." />
+  <meta name="theme-color" content="#f59a23" />
 
-    <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="SpayWoo" />
+  <meta property="og:description" content="Helping stray cats find healthier futures." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/SpayWooLogo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header>
-    <div class="container">
-        <h1>🐾 SpayWoo</h1>
+  <header class="site-header" aria-label="Site header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="./" aria-label="SpayWoo home">
+        <img src="assets/images/SpayWooLogo.png" alt="SpayWoo logo" />
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about">About</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="info.html">Info</a>
-        </nav>
+  <main id="main">
+    <section class="hero">
+      <div class="paw paw-one" aria-hidden="true">🐾</div>
+      <div class="paw paw-two" aria-hidden="true">🐾</div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Community cat care, made kinder.</p>
+          <h1>Helping stray cats find healthier futures.</h1>
+          <p class="hero-text">
+            SpayWoo is building a local volunteer network focused on stray and community cats — reducing future litters, coordinating care, and helping people take action with compassion.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#volunteer">Become a Volunteer</a>
+            <a class="button button-secondary" href="#about">Learn More</a>
+          </div>
+        </div>
+
+        <div class="hero-logo-wrap reveal" aria-hidden="true">
+          <div class="glow"></div>
+          <img class="hero-logo" src="assets/images/SpayWooLogo.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="cards-section container" aria-label="What SpayWoo does">
+      <article class="feature-card reveal">
+        <span class="card-icon" aria-hidden="true">🐾</span>
+        <h2>Prevent</h2>
+        <p>Reduce future litters through spay and neuter support for stray and community cats.</p>
+      </article>
+      <article class="feature-card reveal">
+        <span class="card-icon" aria-hidden="true">❤️</span>
+        <h2>Care</h2>
+        <p>Help cats get connected to basic medical care, recovery support, and safer outcomes.</p>
+      </article>
+      <article class="feature-card reveal">
+        <span class="card-icon" aria-hidden="true">🤝</span>
+        <h2>Community</h2>
+        <p>Bring volunteers, neighbors, rescues, and clinics together around practical local action.</p>
+      </article>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container split-section">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Why SpayWoo?</p>
+          <h2>Small local efforts can change thousands of lives.</h2>
+          <p>
+            Stray cats are a community issue, but they are also individual lives. SpayWoo exists to make helping them feel less overwhelming by organizing people around clear, compassionate next steps.
+          </p>
+          <p>
+            We are starting simple: volunteer coordination, education, intake, and support for spay/neuter efforts. As the organization grows, this site will become a home for forms, resources, events, and impact stories.
+          </p>
+        </div>
+        <div class="note-card reveal">
+          <h3>Coming soon</h3>
+          <ul>
+            <li>Volunteer signup form</li>
+            <li>Community cat resources</li>
+            <li>Partner and clinic information</li>
+            <li>Donation and sponsorship options</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="volunteer-section" id="volunteer">
+      <div class="container cta-card reveal">
+        <div>
+          <p class="eyebrow">Join the effort</p>
+          <h2>Want to help SpayWoo get started?</h2>
+          <p>
+            We are looking for people interested in volunteering, spreading the word, helping with local coordination, or supporting the setup of future programs.
+          </p>
+        </div>
+        <a class="button button-primary" href="mailto:contact@spaywoo.org?subject=SpayWoo%20Volunteer%20Interest">Email Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/images/SpayWooLogo.png" alt="SpayWoo logo" />
+        <p>Made with love for stray cats.</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:contact@spaywoo.org">contact@spaywoo.org</a>
+        <a href="#about">About</a>
+        <a href="#volunteer">Volunteer</a>
+      </div>
     </div>
-</header>
+  </footer>
 
-<main class="hero">
-
-    <div class="hero-card">
-
-        <h2>Coming Soon</h2>
-
-        <p>
-            SpayWoo is a small, community-focused cat rescue dedicated to helping
-            cats through rescue, fostering, adoption, and spay & neuter efforts.
-        </p>
-
-        <p>
-            We're building something we're proud of.
-        </p>
-
-        <a class="button" href="info.html">
-            Learn More
-        </a>
-
-    </div>
-
-</main>
-
-<footer>
-    © 2026 SpayWoo
-</footer>
-
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -292,6 +292,47 @@ h3 { font-size: 1.35rem; }
   .cta-card, .footer-grid { align-items: flex-start; flex-direction: column; }
 }
 
+.volunteer-section {
+    padding: 6rem 0;
+    background: #faf8f4;
+}
+
+.volunteer-section .container {
+    max-width: 950px;
+}
+
+.cta-card {
+    background: white;
+    border-radius: 24px 24px 0 0;
+    padding: 3rem;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.cta-content {
+    max-width: 700px;
+}
+
+.cta-note {
+    margin-top: 1.5rem;
+    color: #666;
+    font-style: italic;
+}
+
+.volunteer-form {
+    background: white;
+    padding: 0 2rem 2rem;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.airtable-embed {
+    width: 100%;
+    min-height: 720px;
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }

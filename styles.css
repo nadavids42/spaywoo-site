@@ -1,1 +1,211 @@
+:root {
 
+    --background: #f8f7f2;
+    --card: #ffffff;
+
+    --primary: #4f7d5c;
+    --primary-dark: #355641;
+
+    --text: #2e2e2e;
+    --muted: #777;
+
+    --shadow: 0 12px 32px rgba(0,0,0,.08);
+
+    --radius: 16px;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:
+        "Segoe UI",
+        system-ui,
+        sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    display:flex;
+    flex-direction:column;
+
+    min-height:100vh;
+
+}
+
+header{
+
+    background:white;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.container{
+
+    width:min(1100px,92%);
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 0;
+
+}
+
+nav{
+
+    display:flex;
+    gap:24px;
+
+}
+
+nav a{
+
+    color:var(--text);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+nav a:hover{
+
+    color:var(--primary);
+
+}
+
+.hero{
+
+    flex:1;
+
+    display:grid;
+    place-items:center;
+
+    padding:40px;
+
+}
+
+.hero-card{
+
+    background:var(--card);
+
+    max-width:700px;
+
+    text-align:center;
+
+    padding:60px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+.hero-card h2{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.hero-card p{
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.button{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:14px 30px;
+
+    background:var(--primary);
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:999px;
+
+    transition:.2s;
+
+}
+
+.button:hover{
+
+    background:var(--primary-dark);
+
+}
+
+.page{
+
+    flex:1;
+
+    width:min(900px,92%);
+
+    margin:60px auto;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+.card h2{
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    margin-top:40px;
+    margin-bottom:12px;
+
+}
+
+.card p{
+
+    line-height:1.8;
+    margin-bottom:18px;
+
+}
+
+.card a{
+
+    color:var(--primary);
+
+}
+
+footer{
+
+    padding:30px;
+
+    text-align:center;
+
+    color:var(--muted);
+
+}
